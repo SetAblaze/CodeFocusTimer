@@ -1,0 +1,70 @@
+{
+  "project" : {
+    "id" : "focustimer-352686-Mst",
+    "name" : "focustimer-352686-Mst",
+    "folder" : "/jaicp"
+  },
+  "settings" : {
+    "language" : "ru",
+    "spellingCorrection" : false,
+    "classificationAlgorithm" : "sts",
+    "timezone" : "Europe/Moscow",
+    "extendedSettings" : {
+      "tokenizerEngine" : "default"
+    },
+    "businessShared" : false,
+    "business" : false
+  },
+  "intents" : [ {
+    "id" : 504210,
+    "path" : "/пока",
+    "enabled" : true,
+    "businessShared" : false,
+    "business" : false,
+    "phrases" : [ {
+      "text" : "пока"
+    } ]
+  }, {
+    "id" : 504211,
+    "path" : "/привет",
+    "enabled" : true,
+    "businessShared" : false,
+    "business" : false,
+    "phrases" : [ {
+      "text" : "привет"
+    } ]
+  }, {
+    "id" : 505196,
+    "path" : "/спасибо",
+    "answer" : "Рад помочь",
+    "enabled" : true,
+    "businessShared" : false,
+    "business" : false,
+    "phrases" : [ {
+      "text" : "спасибо"
+    } ],
+    "patterns" : [ ],
+    "slots" : [ ]
+  } ],
+  "entities" : [ {
+    "entity" : {
+      "id" : 361125,
+      "name" : "Таймер",
+      "enabled" : true,
+      "type" : "annotation",
+      "priority" : 1,
+      "noSpelling" : false,
+      "noMorph" : false,
+      "phoneticSearch" : false,
+      "fuzzySearch" : true,
+      "client" : false
+    },
+    "records" : [ {
+      "id" : 20281227,
+      "type" : "synonyms",
+      "rule" : [ "Время" ],
+      "value" : ""
+    } ]
+  } ],
+  "enabledSystemEntities" : [ "duckling.number", "duckling.time", "duckling.duration", "duckling.phone-number", "duckling.email", "duckling.url", "duckling.date", "duckling.time-of-day" ]
+}
